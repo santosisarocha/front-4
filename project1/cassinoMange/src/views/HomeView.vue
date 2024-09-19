@@ -10,20 +10,20 @@
       </div>
       <div class="currency-background">
         
-        <div class="currency-background1">
-          <div class="currency1">
-            <img src="/moeda1.png" alt="gold">
-        </div>
-          <img src="/gold.png" alt="gold">
+        <div class="currency-background1">                            
+          <img src="/moeda1.png" alt="gold">
         </div>
         <div class="currency-background2">
-          <img src="/gold.png" alt="gold">
+          <img src="/moeda2.png" alt="gold">
         </div>
         <div class="currency-background3">
-          <img src="/gold.png" alt="gold">
+          <img src="/moeda3.png" alt="gold">
         </div>
         <div class="currency-background4">
-          <img src="/gold.png" alt="gold">
+          <img src="/moeda4.png" alt="gold">
+        </div>
+        <div class="botao1">
+          <button>Jogar</button>
         </div>
         
       </div>
@@ -86,8 +86,8 @@ main {
 .currency-background1 {
   position: absolute; 
   top: 38%;  
-  padding: 2.8%; 
-  margin-left: -21%;  
+  padding: 3.5%; 
+  margin-left: -24%;  
     
 }
 
@@ -135,5 +135,27 @@ main {
   width: 180%;
   height: 180%;
 
+}
+.botao1 {
+  position: absolute; 
+  top: 60%;  
+  padding: 2.8%;
+  margin-left: -7%;  
+}
+
+.botao1 button {
+  background-color: gold; 
+  color: rgb(0, 0, 0); 
+  font-size: 4rem; 
+  font-family: 'Seagram'; 
+  padding: 15px 30px; 
+  border: none; 
+  border-radius: 50px; 
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.botao1 button:hover {
+  background-color: darkgoldenrod; 
 }
 </style>
