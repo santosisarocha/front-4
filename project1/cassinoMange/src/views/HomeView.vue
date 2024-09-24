@@ -1,35 +1,52 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
+function navigateToPlay() {
+  router.push({ path: '/play' });
+}
+function navigateToCurrency() {
+  router.push({ path: '/moeda' });
+}
+function navigateToCurrency2() {
+  router.push({ path: '/moeda2' });
+}
+function navigateToCurrency3() {
+  router.push({ path: '/moeda3' });
+}
 </script>
 
 <template>
   <main>
     <div class="fundo">
-      <img src="/fundoCassino.png" alt="cassino fundo">
+      <img src="/fundoCassino.png" alt="cassino fundo" />
       <div class="mainText">
         <h1>Casino Mange</h1>
       </div>
       <div class="currency-background">
-        
-        <div class="currency-background1">                            
-          <img src="/moeda1.png" alt="gold">
+        <div class="currency-background1" @click="navigateToCurrency">
+          <img src="/moeda1.png" alt="gold" />
         </div>
-        <div class="currency-background2">
-          <img src="/moeda2.png" alt="gold">
+        <div class="currency-background2" @click="navigateToCurrency2">
+          <img src="/moeda2.png" alt="gold" />
         </div>
-        <div class="currency-background3">
-          <img src="/moeda3.png" alt="gold">
+        <div class="currency-background3" @click="navigateToCurrency3">
+          <img src="/moeda3.png" alt="gold" />
         </div>
         <div class="currency-background4">
-          <img src="/moeda4.png" alt="gold">
+          <img src="/moeda4.png" alt="gold" />
         </div>
         <div class="botao1">
-          <button>Jogar</button>
+          
+          <button @click="navigateToPlay">Jogar</button>
         </div>
-        
       </div>
     </div>
   </main>
 </template>
+
+
 
 <style scoped>
 main {

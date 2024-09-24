@@ -7,13 +7,12 @@
       <img src="/fundoCassino.png" alt="cassino fundo">
       <div class="mainText">
         <h1>Casino Mange</h1>
-        <img src="/moeda1.png" alt="gold">
+        <img src="/moeda2.png" alt="gold">
       </div>
       <div class="currency-background">
         
         <div class="actually_value">                            
-          <h2>O valor atual: </h2>
-          <input type="number">
+          <h2>O valor atual: 30,00</h2>
         </div>
         <div class="value_converter">                            
           <h2>O valor de converção: </h2>
@@ -95,17 +94,6 @@ main {
 .actually_value{
     font-size: 1.5rem;
     font-family: 'Seagram'; 
-}
-.actually_value input{
-    position: absolute;
-    font-size: 1.5rem;
-    font-family: 'Seagram';
-    background-color: black;
-    color: gold;
-    width: 10%;
-    margin-left: 39%;
-    margin-top: -7%;
-    
 }
 .value_converter{
     font-size: 1.5rem;
